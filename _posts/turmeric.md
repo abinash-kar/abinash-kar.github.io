@@ -2,7 +2,7 @@
 layout: post
 title: Turmeric
 subtitle: 
-gh-badge: [star, fork, follow]
+gh-badge: 
 tags: 
 comments: false
 author: 
