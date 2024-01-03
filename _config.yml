@@ -20,11 +20,11 @@ author:
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  About Us: "aboutme"
+  Products:
+    - Turmeric: "turmeric"
+    - Clove: "clove"
+  Contact Us: "contactus"
 
 ################
 # --- Logo --- #
