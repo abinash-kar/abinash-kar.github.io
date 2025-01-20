@@ -1,11 +1,58 @@
----
-layout: page
-title: Sunrise Enterpreneurs
-subtitle: We are a leading brand in the export of Spices
----
-Sunrise Enterpreneurs is one of the world’s trustworthy and reliable Global Spice Merchants and Investors offering various one window solutions to Small and Medium sized spice businesses catering their local spice market demands for various qualities, grades and origin; Large and Medium Scale Spice Processing Industries such as Oleo-resins extraction companies, food coloring and food flavoring industries, Essential Oils and Natural Oils processing companies; Spice Consuming Food Industries such as Spices Packaging Companies, Large and Medium Scale food Catering companies, Bakeries, Roasters, Spice Value Added Extractors; Pharmaceutical Industries such as medicinal purpose extraction, tooth paste manufacturers, perfumers and various other bulk consumers.
+<!DOCTYPE html>
+<html>
+<body>
+<h1>AUTOMATIC KEYBOARD WRITING</h1>
+<p>The words vanish as you write, so you don't have to deal with the burden of memory and write in the present</p>
 
 
-Our professional team consists of spice industry professionals with over more than Six Decades of Experience; Vast Market Knowledge from Harvesting, Cultivation, Supply, Demand and Consumption Statistics; Several Origins with Various Grades for each Spice Species; Ready Stocks for Prompt Shipments; Committed Quality Assurance; Consistent Committed Deliverance; Combine Containers with Various Origin Spices and their Several Grades.
-![spices](/assets/img/home4.jpg)
-![turmeric](/assets/img/turmeric.jpg)
+  <p><label for="w3review">Start Typing in the below box</label></p>
+  <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+<button onclick="myFunction()">SHOW</button>
+<button onclick="myFunctionhide()">HIDE</button>
+<div id ="divID"></div>
+<script>
+var inputVal = document.getElementById("w3review");
+let v = "";
+function myFunction() {
+   var div = document.getElementById('divID');
+   div.style.display = "block";
+   div.innerHTML =v;
+   
+}
+function myFunctionhide() {
+   var div = document.getElementById('divID');
+   div.style.display = "none";
+   
+}
+
+document.body.onkeyup = function(e) {
+  if (e.key == " " ||
+      e.code == "Space" ||      
+      e.keyCode == 32 ||
+      e.keyCode == 13
+  ) {
+  if (e.keyCode == 13)
+        {
+        r = inputVal.value;
+        v = v.concat(r);        
+        v =v.concat('<br>');
+        
+        }
+  else
+        {
+        r = inputVal.value;
+        v = v.concat(r);
+        }
+     
+   
+     
+    inputVal.value = "";
+
+   
+    
+  }
+};
+</script>
+
+</body>
+</html>
